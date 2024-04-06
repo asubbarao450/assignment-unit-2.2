@@ -26,10 +26,10 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make a variable called name and set it to 'Dane' as a string. 
+// We run a conditional statement which checks if name is equal to the string 'Mary' and the underlying data types of two comparisons are the same
+// Since variable 'name' does not equal 'Mary', the code jumps to the else statement on line 40
+//console.log will display 'How do you do?'.
 
 //CODE
 /*
@@ -45,11 +45,12 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
-
+// We declare a variable called secret without initializing it. 
+// We declare and initialize a variable called 'code' to 123. 
+// We compare the variable code to the number 123 to make sure the quantity and underlying data types match
+//Since code and 123 match we set the variable secret to 'equal' and multiply code by 2 (code = 246)
+//the code in the second if statement is skipped as the variable code is less than 250
+//We console log 'super'
 //CODE
 /*
 let secret;
@@ -70,10 +71,10 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We declare and initialize three variables called isStudent (boolean), age (number) and zip (number)
+// We run through three conditionals where we first check if isStudent is true and zip is greater than 8000
+// the second conditional where either isStudent is false or age is less than 30, the third conditional where isStudent alone is true
+//Since the third conditional is the first true statement we console log 'Welcome to Prime!'. 
 
 //CODE
 /*
@@ -130,11 +131,14 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+//FIX - colorOne is set to red instead of blue, and colorTwo is set to blue instead of red
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
 if (mix === true) {
+  //FIX - only colorOne is set to purple. colorTwo also needs to be set to 'purple'.
+  //should include code line colorTwo='purple';
   colorOne = 'purple';
 }
 */
@@ -144,9 +148,12 @@ if (mix === true) {
 // -- they are so we console.log 'throw away the food!'
 
 /*
+//FIX  - we may want to use let instead of constant to declare time as the instructions ask us to create two variables. 
+//const is used to create constants not variables
 let temp = 40;
 const time = 4;
 
+//FIX  - we want to use && not || in the below if statement to signify 'and' per the instructions. Our current code signifies 'or'
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -159,6 +166,9 @@ if (temp > 39 || time >= 4) {
 /*
 let age = 21;
 const minAge = 21;
+
+//FIX - we want to swap what's in the code block for the if and else statements. Currently, if our age is greater than or equal to 21(minAge) we print 'no entry'
+//after checking if age is greater than or equal to minAge we want to have the statement console.log('enter') in the first if code block
 
 if(minAge <= age) {
   console.log('no entry');
